@@ -2,7 +2,7 @@ body {
   margin: 0px;
   padding: 0px;
   background-color: #4d515e;
-  font-family: Calibri Light;
+  font-family: Sans Serif;
  }
 p, h5 {
   color: #b5bbc7;
@@ -10,8 +10,7 @@ p, h5 {
 h4 {
   margin: 0;
   color: #494e58;
-  font-family: Calibri Light;
-}
+  }
 .wrapper {
   display: block;
   background-image: url(img/backg.jpg);
