@@ -2,14 +2,21 @@ body {
   margin: 0px;
   padding: 0px;
   background-color: #4d515e;
-  font-family: Sans Serif;
+  font-family:  sans-serif;
  }
 p, h5 {
   color: #b5bbc7;
 }
+h1 {
+  font-weight: normal;
+  color: #616060;
+}
 h4 {
   margin: 0;
-  color: #494e58;
+  color: #616060;
+  font-size: 0.8em;
+  line-height: 1em;
+  font-weight: bold;
   }
 .wrapper {
   display: block;
@@ -17,30 +24,29 @@ h4 {
   background-position: right;
   background-size: 80% 100% ;
   background-repeat: no-repeat;
-  width: 80%;
+  width: 70%;
   margin: auto;
   margin-top: 30px;
   margin-bottom: 30px;
-  border-radius: 20px;
+  border-radius: 0px 10px 10px 0px;
 }
-.sign-up {
+.sign-up  {
   display: block;
   padding: 20px 50px 20px 50px;
   width: 60%;
-  min-width: 620px;
+  min-width:350px;
   background-color: white; 
-  border-radius: 20px;
-}
-h1 {
-  font-weight: normal;
+  border-radius: 10px 0px 0px 10px;
 }
 .lorem {
   padding: 10px 0px 20px 0px;
+  font-size: 0.9em;
+  line-height: 2em;
 }
 .sign-up-button {
   display: block;
   padding-top: 20px;
-}
+  }
 .button {
   display: block;
   width: 100%;
@@ -59,22 +65,24 @@ h1 {
 }
 .footer {
   display: block;
-  margin-top: 40px;
+  margin: 40px 0 10px 0;
   padding: 40px 0px 10px 0px;
   width: 100%;
   border-top: 1px solid  #ecedee;
-
-
 }
 .footer-l {
   float: left; 
   margin: 0px;
   color: #545b67;
+  font-size: 0.9em;
+  width: 48%;
 }
 .footer-r {
   float: right;
   margin: 0px;
   font-size: 0.9em;
+  width: 48%;
+  text-align: right;
 }
 .g{
   background-image: url(img/g.png);
