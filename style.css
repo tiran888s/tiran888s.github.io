@@ -39,13 +39,13 @@ h4 {
   border-radius: 10px 0px 0px 10px;
 }
 .lorem {
-  padding: 10px 0px 0px 0px;
   font-size: 0.9em;
   line-height: 2em;
+  margin-bottom: 20px;
 }
 .sign-up-button {
   display: block;
-  padding-top: 20px;
+  padding-top: 30px;
   }
 .button {
   display: block;
@@ -65,7 +65,7 @@ h4 {
 }
 .footer {
   display: block;
-  margin: 40px 0 10px 0;
+  margin: 50px 0 10px 0;
   padding: 40px 0px 10px 0px;
   width: 100%;
   border-top: 1px solid  #ecedee;
