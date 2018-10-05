@@ -18,13 +18,13 @@ h4 {
   line-height: 1em;
   font-weight: bold;
   }
-.wrapper {
+ .wrapper {
   display: block;
   background-image: url(img/backg.jpg);
   background-position: right;
   background-size: 80% 100% ;
   background-repeat: no-repeat;
-  width: 70%;
+  width: 1200px;
   margin: auto;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -32,8 +32,8 @@ h4 {
 }
 .sign-up  {
   display: block;
-  padding: 20px 50px 20px 50px;
-  width: 60%;
+  padding: 20px 80px 20px 80px;
+  width: 780px;
   min-width:350px;
   background-color: white; 
   border-radius: 10px 0px 0px 10px;
@@ -68,7 +68,7 @@ h4 {
   margin: 50px 0 10px 0;
   padding: 40px 0px 10px 0px;
   width: 100%;
-  border-top: 1px solid  #ecedee;
+  border-top: 1px solid  #b6b7b7;
 }
 .footer-l {
   float: left; 
