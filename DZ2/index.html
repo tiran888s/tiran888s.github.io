@@ -3,42 +3,51 @@
 <head>
 	<title>ДЗ2</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
+	
 </head>
 <body>
 	<header>
-		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark ">
-        <a class="navbar-brand" href="#">Fixed navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-          <form class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+			<a class="navbar-brand" href="#">
+              <i class="fas fa-chess-rook"></i>
+              Bootstrap
+            </a>
+		       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+		          <span class="navbar-toggler-icon"></span>
+		        </button>
+		        <div class="collapse navbar-collapse" id="navbarCollapse">
+		          <ul class="navbar-nav ml-auto">
+		            <li class="nav-item active">
+		              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		            </li>
+		            <li class="nav-item">
+		              <a class="nav-link" href="#">Enterprise</a>
+		            </li>
+		            
+		            <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Features
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
 
-    </header>
-	<main class="mt-5">
-		<div class="jumbotron text-center mt-5">
+		          </ul>
+		          <form class="form-inline mt-2 mt-md-0">
+		            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Sign up</button>
+		          </form>
+		        </div>
+		      </nav>
+	</header>
+    <main>
+		<div class="jumbotron text-center">
 	        <div class="container">
 	          <h1 class="jumbotron-heading">Album example</h1>
 	          <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
@@ -47,34 +56,138 @@
 	            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
 	          </p>
 	        </div>
-	      </div>
-	      <div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<h3 class="text-center">From the Firehose</h3>
-			</div>
-
-			<div class="col-md-4">
-              <div class="card mb-4 ">
-                
-               <img data-src="holder.js/420x220" class="img-fluid" alt="420x220" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22200%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16645479a2e%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A10pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16645479a2e%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2274.4296875%22%20y%3D%22104.5%22%3E200x200%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 420px; height: 220px;">
-                <div class="card-body row">
-                	<small class="text-muted ">Some text</small>
-                	<p class="text-primary justify-content-end">200 $</p> 
-	                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-	                  <div class="d-flex justify-content-between align-items-center">
-	                    <div class="btn-group">
-	                      <button type="button" class="btn  btn-outline-secondary">View</button>
-	                    </div>
-                </div>
-              </div>
-            </div>	
-
-
+	     </div>
+	      <article class="container my-3">
+	      	<h2 class="text-center font-italic">From the Firehose</h2>
+	      		<hr class="my-3"></hr>
+	      		<div class="card-group">
+	      		  <div class="card">
+	      		    <img class="card-img-top" src="https://imgplaceholder.com/420x220/55595c/eceeef?font-family=Roboto" alt="Card image cap">
+	      		    <div class="card-body">
+		      		    <p><small class="text-muted">Same text</small><i class="text-primary float-right">200$</i></p>
+		      		    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+		      		    <a class="btn btn-sm btn-block btn-outline-dark" href="#">View more</a>
+	      		    </div>
+	      		  </div>
+	      		  <div class="card">
+	      		    <img class="card-img-top" src="https://imgplaceholder.com/420x220/55595c/eceeef?font-family=Roboto" alt="Card image cap">
+	      		    <div class="card-body">
+		      		    <p><small class="text-muted">Same text</small><i class="text-primary float-right">200$</i></p>
+		      		    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+		      		    <a class="btn btn-sm btn-block btn-outline-dark" href="#">View more</a>
+	      		    </div>
+	      		  </div>
+	      		  <div class="card">
+	      		    <img class="card-img-top" src="https://imgplaceholder.com/420x220/55595c/eceeef?font-family=Roboto" alt="Card image cap">
+	      		    <div class="card-body">
+		      		    <p><small class="text-muted">Same text</small><i class="text-primary float-right">200$</i></p>
+		      		    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+		      		    <a class="btn btn-sm btn-block btn-outline-dark" href="#">View more</a>
+	      		    </div>
+	      		  </div>
+	      		</div>
+	      		<div class="row my-5">
+	      			<div class="col-md-8">
+	      				<h3>Last News</h3>
+	      				<hr class="my-3"></hr>
+	      				<div class="p-4 my-3 bg-light">
+	      					<h4>Sample blog post</h4>
+	      					<hr class="my-3"></hr>
+	      					<small class="text-muted">January 1, 2054 by <a href="#">autor</a></small>
+	      					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
+	      				</div>
+	      				<div class="p-4 my-3 bg-light">
+	      					<h4>Sample blog post</h4>
+	      					<hr class="my-3"></hr>
+	      					<small class="text-muted">January 1, 2054 by <a href="#">autor</a></small>
+	      					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
+	      				</div>
+	      			</div>
+	      			<div class="col-md-4">
+	      				<div class="p-3 text-white bg-dark">
+	      					<h3>About</h3>
+	      					<p>Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>	
+	      				</div>
+	      				<h4 class="my-2">Subscribe</h4>
+	      				<div class="forma row my-3">
+	      					
+	      					<div class="col-md-6">
+		      					<label for="firstName">First name</label>
+			      				<input type="text" class="form-control" id="firstName" placeholder="" value="" required="">	
+	      					</div>
+	      					<div class="col-md-6">
+	      						<label for="firstName">Last name <span class="text-muted">(Optional)</span></label>
+		      					<input type="text" class="form-control" id="firstName" placeholder="" value="" required="">	
+	      					</div>
+	      					<div class="mylo col-md-12 my-4">
+	      						<div class="input-group">
+	      						    <div class="input-group-prepend">
+	      						        <span class="input-group-text"><i class="fas fa-envelope"></i></i>
+										</span>         
+	      						    </div>
+	      						    <input type="text" class="form-control" id="username" placeholder="Ваше мыло@пример.нет" required="">
+	      						    <div class="invalid-feedback" style="width: 100%;">
+	      						                  Your username is required.
+	      						    </div>
+	      						</div>
+	      					</div>            
+	      				</div>	
+	      			</div>
+	      		</div>
+	      </article>
+ 	</main>   	
+	<footer>
+		<div class="container-fluid bg-dark">
+			<div class="row">
+				<div class="col-md p-5">
+					<i class="fas fa-chess-rook display-2 text-light mb-3"></i>
+					<small class="d-block mb-3 text-muted">© 2017-2018</small>
+				</div>
+				<div class="col-md p-5">
+					<h5 class="text-white">Features</h5>
+					<ul class="list-unstyled text-small">
+                            <li><a class="text-muted" href="#">Cool stuff</a></li>
+                            <li><a class="text-muted" href="#">Random feature</a></li>
+                            <li><a class="text-muted" href="#">Team feature</a></li>
+                            <li><a class="text-muted" href="#">Stuff for developers</a></li>
+                            <li><a class="text-muted" href="#">Another one</a></li>
+                            <li><a class="text-muted" href="#">Last time</a></li>
+                        </ul>
+				</div>
+				<div class="col-md p-5">
+					<h5 class="text-white">Resources</h5>
+					<ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Resource</a></li>
+                        <li><a class="text-muted" href="#">Resource name</a></li>    
+                        <li><a class="text-muted" href="#">Another resource</a></li>    
+                        <li><a class="text-muted" href="#">Final resource</a></li>        
+                    </ul>
+				</div>
+				<div class="col-md p-5">
+					<h5 class="text-white">Resources</h5>
+					<ul class="list-unstyled text-small">
+                    	<li><a class="text-muted" href="#">Business</a></li>
+                        <li><a class="text-muted" href="#">Education</a></li>    
+                        <li><a class="text-muted" href="#">Government</a></li>    
+                        <li><a class="text-muted" href="#">Gaming</a></li>        
+                    </ul>
+				</div>
+				<div class="col-md p-5">
+					<h5 class="text-white">About</h5>
+					<ul class="list-unstyled text-small">
+                    	<li><a class="text-muted" href="#">Team</a></li>
+                    	<li><a class="text-muted" href="#">Locations</a></li>
+                    	<li><a class="text-muted" href="#">Privacy</a></li>
+                    	<li><a class="text-muted" href="#">Terms</a></li>
+                    </ul>
+				</div>
+				
 			</div>
 		</div>
-		</div>
-	</main>
-	<footer></footer>
+	</footer>
+	     
+
+	
+	
 </body>
 </html>
