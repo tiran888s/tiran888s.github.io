@@ -10,3 +10,18 @@ body {
  text-align: center;
   font-size: 1.2em;
 }
+.bg-yellow {
+	background-color: #FFF9DF;
+}
+.bold {
+	font-weight: bold;
+}
+.width-h3-320 {
+	width: 320px;
+	margin: 0 auto;
+	border-bottom: 10px solid #FFD200!important;
+
+}
+.documentation {
+	height: 100px;
+}
