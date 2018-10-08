@@ -40,6 +40,6 @@ a {
 	text-decoration: none!important;
 	color: #212529;
 }
-a:hover {
+.nav-link:hover {
 	color: #35acdc;
 }
