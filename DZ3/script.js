@@ -93,7 +93,7 @@ function Cdivision(){
 numberX='';
 for (var Num =0; Num<i; Num++) {
 numberX=numberX+numbers[Num];
-number1[z]=parseInt(numberX);
+number1[z]=parseFloat(numberX);
 }
 z++;
 i=0;
@@ -106,7 +106,7 @@ function Cmultiply(){
 numberX='';
 for (var Num =0; Num<i; Num++) {
 numberX=numberX+numbers[Num];
-number1[z]=parseInt(numberX);
+number1[z]=parseFloat(numberX);
 }
 z++;
 i=0;
@@ -119,12 +119,12 @@ function Cminus(){
 numberX='';
 for (var Num =0; Num<i; Num++) {
 numberX=numberX+numbers[Num];
-number1[z]=parseInt(numberX);
+number1[z]=parseFloat(numberX);
 }
 z++;
 i=0;
 batAction = Cminus;	
-stringAction = stringAction + '/';
+stringAction = stringAction + '-';
 var Cresalt = document.getElementById('Cresalt');
 Cresalt.innerHTML = stringAction;
 }
@@ -132,17 +132,21 @@ function Cplus(){
 numberX='';
 for (var Num =0; Num<i; Num++) {
 numberX=numberX+numbers[Num];
-number1[z]=parseInt(numberX);
+number1[z]=parseFloat(numberX);
 }
 z++;
 i=0;
 batAction = Cplus;
-stringAction = stringAction + '/';
+stringAction = stringAction + '+';
 var Cresalt = document.getElementById('Cresalt');
 Cresalt.innerHTML = stringAction;	
 }
 
-
+function point(){
+stringAction = stringAction + ',';
+var Cresalt = document.getElementById('Cresalt');
+Cresalt.innerHTML = stringAction;
+}
 
 function reset(){
 i=0;
@@ -154,9 +158,10 @@ Cresalt.innerHTML ='0';
 
 function Cequally(){
 numberX='';
+alert()
 for (var Num =0; Num<i; Num++) {
 	numberX=numberX+numbers[Num];
-	number1[z]=parseInt(numberX);
+	number1[z]=parseFloat(numberX);
 }
 if (batAction == Cdivision) {
 		result = number1[0] / number1[1];
