@@ -158,7 +158,6 @@ Cresalt.innerHTML ='0';
 
 function Cequally(){
 numberX='';
-alert()
 for (var Num =0; Num<i; Num++) {
 	numberX=numberX+numbers[Num];
 	number1[z]=parseFloat(numberX);
