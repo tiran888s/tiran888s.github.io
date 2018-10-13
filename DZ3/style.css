@@ -1,9 +1,6 @@
-.width-1 {
-	width: 500px;
-	
-}
-.width-2 {
-	width: 530px;
+
+.margin-auto{
+margin: auto;
 }
 #Cresalt{
 	font-size: 1.4em;
