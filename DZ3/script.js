@@ -10,7 +10,6 @@ var numberX;
 function C1(){
 var elem = document.getElementById('C1');
 numbers[i] = elem.value;
-y=numbers[i];
 stringAction = stringAction + numbers[i];
 var Cresalt = document.getElementById('Cresalt');
 Cresalt.innerHTML = stringAction;
@@ -143,9 +142,11 @@ Cresalt.innerHTML = stringAction;
 }
 
 function point(){
-stringAction = stringAction + ',';
+numbers[i] = '.';
+stringAction = stringAction + '.';
 var Cresalt = document.getElementById('Cresalt');
 Cresalt.innerHTML = stringAction;
+i++;
 }
 
 function reset(){
