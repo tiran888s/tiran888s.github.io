@@ -7,7 +7,7 @@ var result=0;
 var i=0;
 var z=0;
 var numberX;
-
+var pointB=0;
 
 function C1(){
 var elem = document.getElementById('C1');
@@ -91,6 +91,7 @@ i++;
 }
 
 function Cdivision(){
+	if (batAction==0) {
 numberX='';
 for (var Num =0; Num<i; Num++) {
 numberX=numberX+numbers[Num];
@@ -98,20 +99,14 @@ number1[z]=parseFloat(numberX);
 }
 z++;
 i=0;
-if (batAction!=0) {
-	z--;
-	stringAction = stringAction.slice(0, -1);
-}
 batAction = Cdivision;
 stringAction = stringAction + '/';
 var Cresalt = document.getElementById('Cresalt');
 Cresalt.innerHTML = stringAction;	
 }
-
-
-
-
+}
 function Cmultiply(){
+	if (batAction==0) {
 numberX='';
 for (var Num =0; Num<i; Num++) {
 numberX=numberX+numbers[Num];
@@ -119,16 +114,14 @@ number1[z]=parseFloat(numberX);
 }
 z++;
 i=0;
-if (batAction!=0) {
-	z--;
-	stringAction = stringAction.slice(0, -1);
-}
 batAction = Cmultiply;
 stringAction = stringAction + '*';
 var Cresalt = document.getElementById('Cresalt');
 Cresalt.innerHTML = stringAction;	
 }
+}
 function Cminus(){
+	if (batAction==0) {
 numberX='';
 for (var Num =0; Num<i; Num++) {
 numberX=numberX+numbers[Num];
@@ -136,16 +129,14 @@ number1[z]=parseFloat(numberX);
 }
 z++;
 i=0;
-if (batAction!=0) {
-	z--;
-	stringAction = stringAction.slice(0, -1);
-}
 batAction = Cminus;	
 stringAction = stringAction + '-';
 var Cresalt = document.getElementById('Cresalt');
 Cresalt.innerHTML = stringAction;
 }
+}
 function Cplus(){
+	if (batAction==0) {
 numberX='';
 for (var Num =0; Num<i; Num++) {
 numberX=numberX+numbers[Num];
@@ -153,24 +144,23 @@ number1[z]=parseFloat(numberX);
 }
 z++;
 i=0;
-if (batAction!=0) {
-	z--;
-	stringAction = stringAction.slice(0, -1);
-}
 batAction = Cplus;
 stringAction = stringAction + '+';
 var Cresalt = document.getElementById('Cresalt');
 Cresalt.innerHTML = stringAction;	
 }
+}
 
 function point(){
+	if (pointB==0) {
 numbers[i] = '.';
 stringAction = stringAction + '.';
 var Cresalt = document.getElementById('Cresalt');
 Cresalt.innerHTML = stringAction;
 i++;
+pointB = 1;
 }
-
+}
 function reset(){
 i=0;
 z=0;
@@ -179,7 +169,6 @@ stringAction = '';
 var Cresalt = document.getElementById('Cresalt');
 Cresalt.innerHTML ='0';
 }
-
 function Cequally(){
 numberX='';
 for (var Num =0; Num<i; Num++) {
