@@ -1,4 +1,4 @@
-var batAction;
+var batAction = 0;
 var number1 = new Array();
 var number2 = new Array();
 var numbers = new Array();
@@ -98,11 +98,19 @@ number1[z]=parseFloat(numberX);
 }
 z++;
 i=0;
+if (batAction!=0) {
+	z--;
+	stringAction = stringAction.slice(0, -1);
+}
 batAction = Cdivision;
 stringAction = stringAction + '/';
 var Cresalt = document.getElementById('Cresalt');
 Cresalt.innerHTML = stringAction;	
 }
+
+
+
+
 function Cmultiply(){
 numberX='';
 for (var Num =0; Num<i; Num++) {
@@ -111,6 +119,10 @@ number1[z]=parseFloat(numberX);
 }
 z++;
 i=0;
+if (batAction!=0) {
+	z--;
+	stringAction = stringAction.slice(0, -1);
+}
 batAction = Cmultiply;
 stringAction = stringAction + '*';
 var Cresalt = document.getElementById('Cresalt');
@@ -124,6 +136,10 @@ number1[z]=parseFloat(numberX);
 }
 z++;
 i=0;
+if (batAction!=0) {
+	z--;
+	stringAction = stringAction.slice(0, -1);
+}
 batAction = Cminus;	
 stringAction = stringAction + '-';
 var Cresalt = document.getElementById('Cresalt');
@@ -137,6 +153,10 @@ number1[z]=parseFloat(numberX);
 }
 z++;
 i=0;
+if (batAction!=0) {
+	z--;
+	stringAction = stringAction.slice(0, -1);
+}
 batAction = Cplus;
 stringAction = stringAction + '+';
 var Cresalt = document.getElementById('Cresalt');
@@ -154,6 +174,7 @@ i++;
 function reset(){
 i=0;
 z=0;
+batAction = 0;
 stringAction = '';
 var Cresalt = document.getElementById('Cresalt');
 Cresalt.innerHTML ='0';
@@ -180,6 +201,7 @@ if (batAction == Cplus) {
 stringAction = stringAction +'='+result;
 var Cresalt = document.getElementById('Cresalt');
 Cresalt.innerHTML = stringAction;
+batAction = 0;
 }
 
 
