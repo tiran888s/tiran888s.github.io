@@ -1,198 +1,129 @@
-var batAction = 0;
-var number1 = new Array();
-var number2 = new Array();
-var numbers = new Array();
-var stringAction='';
-var result=0;
-var i=0;
-var z=0;
-var numberX;
-var pointB=0;
-
 function C1(){
-var elem = document.getElementById('C1');
-numbers[i] = elem.value;
-stringAction = stringAction + numbers[i];
-var Cresalt = document.getElementById('Cresalt');
-Cresalt.innerHTML = stringAction;
-i++;
+document.getElementById('resalt').value +=1;
 }
 function C2(){
-var elem = document.getElementById('C2');
-numbers[i] = elem.value;
-stringAction = stringAction + numbers[i];
-var Cresalt = document.getElementById('Cresalt');
-Cresalt.innerHTML = stringAction;
-i++;
+document.getElementById('resalt').value +=2;
 }
 function C3(){
-var elem = document.getElementById('C3');
-numbers[i] = elem.value;
-stringAction = stringAction + numbers[i];
-var Cresalt = document.getElementById('Cresalt');
-Cresalt.innerHTML = stringAction;
-i++;
+document.getElementById('resalt').value +=3;
 }
 function C4(){
-var elem = document.getElementById('C4');
-numbers[i] = elem.value;
-stringAction = stringAction + numbers[i];
-var Cresalt = document.getElementById('Cresalt');
-Cresalt.innerHTML = stringAction;
-i++;
+document.getElementById('resalt').value +=4;
 }
 function C5(){
-var elem = document.getElementById('C5');
-numbers[i] = elem.value;
-stringAction = stringAction + numbers[i];
-var Cresalt = document.getElementById('Cresalt');
-Cresalt.innerHTML = stringAction;
-i++;
+document.getElementById('resalt').value +=5;
 }
 function C6(){
-var elem = document.getElementById('C6');
-numbers[i] = elem.value;
-stringAction = stringAction + numbers[i];
-var Cresalt = document.getElementById('Cresalt');
-Cresalt.innerHTML = stringAction;
-i++;
+document.getElementById('resalt').value +=6;
 }
 function C7(){
-var elem = document.getElementById('C7');
-numbers[i] = elem.value;
-stringAction = stringAction + numbers[i];
-var Cresalt = document.getElementById('Cresalt');
-Cresalt.innerHTML = stringAction;
-i++;
+document.getElementById('resalt').value +=7;
 }
 function C8(){
-var elem = document.getElementById('C8');
-numbers[i] = elem.value;
-stringAction = stringAction + numbers[i];
-var Cresalt = document.getElementById('Cresalt');
-Cresalt.innerHTML = stringAction;
-i++;
+document.getElementById('resalt').value +=8;
 }
 function C9(){
-var elem = document.getElementById('C9');
-numbers[i] = elem.value;
-stringAction = stringAction + numbers[i];
-var Cresalt = document.getElementById('Cresalt');
-Cresalt.innerHTML = stringAction;
-i++;
+document.getElementById('resalt').value +=9;
 }
 function C0(){
-var elem = document.getElementById('C0');
-numbers[i] = elem.value;
-stringAction = stringAction + numbers[i];
-var Cresalt = document.getElementById('Cresalt');
-Cresalt.innerHTML = stringAction;
-i++;
+document.getElementById('resalt').value +=0;
 }
-
-function Cdivision(){
-	if (batAction==0) {
-numberX='';
-for (var Num =0; Num<i; Num++) {
-numberX=numberX+numbers[Num];
-number1[z]=parseFloat(numberX);
+function bracket1(){
+document.getElementById('resalt').value +='(';
 }
-z++;
-i=0;
-batAction = Cdivision;
-stringAction = stringAction + '/';
-var Cresalt = document.getElementById('Cresalt');
-Cresalt.innerHTML = stringAction;	
-}
-}
-function Cmultiply(){
-	if (batAction==0) {
-numberX='';
-for (var Num =0; Num<i; Num++) {
-numberX=numberX+numbers[Num];
-number1[z]=parseFloat(numberX);
-}
-z++;
-i=0;
-batAction = Cmultiply;
-stringAction = stringAction + '*';
-var Cresalt = document.getElementById('Cresalt');
-Cresalt.innerHTML = stringAction;	
-}
-}
-function Cminus(){
-	if (batAction==0) {
-numberX='';
-for (var Num =0; Num<i; Num++) {
-numberX=numberX+numbers[Num];
-number1[z]=parseFloat(numberX);
-}
-z++;
-i=0;
-batAction = Cminus;	
-stringAction = stringAction + '-';
-var Cresalt = document.getElementById('Cresalt');
-Cresalt.innerHTML = stringAction;
-}
-}
-function Cplus(){
-	if (batAction==0) {
-numberX='';
-for (var Num =0; Num<i; Num++) {
-numberX=numberX+numbers[Num];
-number1[z]=parseFloat(numberX);
-}
-z++;
-i=0;
-batAction = Cplus;
-stringAction = stringAction + '+';
-var Cresalt = document.getElementById('Cresalt');
-Cresalt.innerHTML = stringAction;	
-}
+function bracket2(){
+document.getElementById('resalt').value +=')';
 }
 
 function point(){
-	if (pointB==0) {
-numbers[i] = '.';
-stringAction = stringAction + '.';
-var Cresalt = document.getElementById('Cresalt');
-Cresalt.innerHTML = stringAction;
-i++;
-pointB = 1;
+var Cresalt = document.getElementById('resalt');
+var xr = Cresalt.value.slice(-1);
+if (xr=='.') {
+document.getElementById('resalt').value = Cresalt.value.slice(0, -1);
 }
+document.getElementById('resalt').value += '.';
+}
+
+function Cminus(){
+var Cresalt = document.getElementById('resalt');
+var xr = Cresalt.value.slice(-1);
+if (xr=='-' || xr=='+' || xr=='*' || xr=='/') {
+document.getElementById('resalt').value = Cresalt.value.slice(0, -1);
+}
+document.getElementById('resalt').value +='-';
+}
+
+function Cplus(){
+var Cresalt = document.getElementById('resalt');
+var xr = Cresalt.value.slice(-1);
+if (xr=='-' || xr=='+' || xr=='*' || xr=='/') {
+document.getElementById('resalt').value = Cresalt.value.slice(0, -1);
+}
+document.getElementById('resalt').value +='+';
+}
+
+function Cdivision(){
+var Cresalt = document.getElementById('resalt');
+var xr = Cresalt.value.slice(-1);
+if (xr=='-' || xr=='+' || xr=='*' || xr=='/') {
+document.getElementById('resalt').value = Cresalt.value.slice(0, -1);
+}
+document.getElementById('resalt').value +='/';
+}
+
+function Cmultiply(){
+var Cresalt = document.getElementById('resalt');
+var xr = Cresalt.value.slice(-1);
+if (xr=='-' || xr=='+' || xr=='*' || xr=='/') {
+document.getElementById('resalt').value = Cresalt.value.slice(0, -1);
+}
+document.getElementById('resalt').value +='*';
+}
+
+function Csqrt(){
+var Cresalt = document.getElementById('resalt');
+var cqrt = Cresalt.value;
+document.getElementById('resalt').value = 'Math.sqrt('+ cqrt+')';
+
+var elem = document.getElementById('resalt');
+var stringAction = document.getElementById('Cresalt');
+stringAction.innerHTML = 'sqrt('+cqrt+')=';
+var rez = eval(elem.value);
+document.getElementById('resalt').value = rez;
+}
+
+function Cpow(){
+var Cresalt = document.getElementById('resalt');
+var pow = Cresalt.value;
+document.getElementById('resalt').value = 'Math.pow('+ pow+', 2)';
+
+var elem = document.getElementById('resalt');
+var stringAction = document.getElementById('Cresalt');
+stringAction.innerHTML = pow + '*' + pow + '=';                                                                        
+var rez = eval(elem.value);
+document.getElementById('resalt').value = rez;
+}
+
+function Cequally(){
+var Cresalt = document.getElementById('resalt');
+var xr = Cresalt.value.slice(-1);
+if (xr=='-' || xr=='+' || xr=='*' || xr=='/') {
+document.getElementById('resalt').value = Cresalt.value.slice(0, -1);
+}
+
+var elem = document.getElementById('resalt');
+var stringAction = document.getElementById('Cresalt');
+stringAction.innerHTML = elem.value + '=';
+var rez = eval(elem.value);
+document.getElementById('resalt').value = rez;
+}
+
+function Bspace(){
+var Cresalt = document.getElementById('resalt');
+document.getElementById('resalt').value = Cresalt.value.slice(0, -1);
 }
 function reset(){
-i=0;
-z=0;
-batAction = 0;
-stringAction = '';
-var Cresalt = document.getElementById('Cresalt');
-Cresalt.innerHTML ='0';
+document.getElementById('resalt').value = '';
+var stringAction = document.getElementById('Cresalt');
+stringAction.innerHTML = 'Anc=0';
 }
-function Cequally(){
-numberX='';
-for (var Num =0; Num<i; Num++) {
-	numberX=numberX+numbers[Num];
-	number1[z]=parseFloat(numberX);
-}
-if (batAction == Cdivision) {
-		result = number1[0] / number1[1];
-}
-if (batAction == Cmultiply) {
-	result = number1[0] * number1[1];
-}
-if (batAction == Cminus) {
-	result = number1[0] - number1[1];
-}
-if (batAction == Cplus) {
-	result = number1[0] + number1[1];
-}
-stringAction = stringAction +'='+result;
-var Cresalt = document.getElementById('Cresalt');
-Cresalt.innerHTML = stringAction;
-batAction = 0;
-}
-
-
-
-

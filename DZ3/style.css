@@ -1,4 +1,13 @@
 
 #Cresalt{
-	font-size: 1.4em;
+	font-size: 0.8em;
+}
+
+#resalt{
+	font-size: 1.5em;
+	font-weight: bold;
+}
+.text-b {
+	font-size: 1.1em;
+	font-weight: bold;
 }
