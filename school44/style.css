@@ -16,12 +16,24 @@ body {
 .bg-news1 {
 	background-color: rgba(56, 239, 228, 0.15); 
 }
+.bg-for-students {
+	background-color: rgba(225, 239, 56, 0.3);
+}
+.bg-for-parents {
+	background-color: #EEEEEE;
+}
+.bg-schedule{
+	background-color: #C4C4C4;
+}
 .bold {
 	font-weight: bold;
 }
 .abs {
 	color: #f12d2d;
 	font-size: 1.2em;
+}
+.text-red{
+	color: #E20000;
 }
 .width-h3-320 {
 	width: 320px;
@@ -33,10 +45,34 @@ body {
 .border-news {
 	border-bottom: 10px solid #FF0000!important;
 }
+.border-for-students {
+	border-bottom: 10px solid #00AA1B!important;
+}
+.border-for-parents {
+	border-bottom: 10px solid #8562C6!important;
+}
+.border-for-contacts{
+	border-bottom: 10px solid #C2C52E!important;
+}
+.border-schedule{
+	padding-bottom: 5px;
+	border-bottom: 3px solid!important;
+}
 .documentation {
 	height: 100px;
+}
+.map {
+	width: 100%!important;
+	margin-bottom: -8px;
+}
+.lin-h p {
+	margin-bottom: 5px!important;
 }
 a {
 	text-decoration: none!important;
 	color: #212529;
+}
+
+.img-100 {
+	width: 100%;
 }
