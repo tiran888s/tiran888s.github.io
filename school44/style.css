@@ -1,78 +1,93 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+	font-family: sans-serif;
 }
-.emblem {
-  float: left;
+a {
+	text-decoration: none!important;
+}
+.width-100{
+	width: 100%;
+	height: auto;
 }
 .title {
  text-align: center;
   font-size: 1.2em;
-}
-.bg-yellow {
-	background-color: #FFF9DF;
-}
-.bg-news1 {
-	background-color: rgba(56, 239, 228, 0.15); 
-}
-.bg-for-students {
-	background-color: rgba(225, 239, 56, 0.3);
-}
-.bg-for-parents {
-	background-color: #EEEEEE;
-}
-.bg-schedule{
-	background-color: #C4C4C4;
-}
-.bold {
-	font-weight: bold;
-}
-.abs {
-	color: #f12d2d;
+ }
+.nav-school-item {
 	font-size: 1.2em;
 }
-.text-red{
-	color: #E20000;
+.school-abilities{
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #0667CE;
 }
-.width-h3-320 {
-	width: 320px;
-	margin: 0 auto;
+.main-bg{
+	background-color: #F8F8F8;
 }
-.border-about-school {
-	border-bottom: 10px solid #FFD200!important;
+.ads-bg{
+	background-color: #FFFFFF;
 }
-.border-news {
-	border-bottom: 10px solid #FF0000!important;
+.I-IIIst{
+	background-color: #E7E7E7;
 }
-.border-for-students {
-	border-bottom: 10px solid #00AA1B!important;
+.news-section{
+	display: inline-block;
+	border-right: 3px solid #C8C8C8!important;
+	padding-right: 15px;
 }
-.border-for-parents {
-	border-bottom: 10px solid #8562C6!important;
+.news-top-a{
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 15px;
 }
-.border-for-contacts{
-	border-bottom: 10px solid #C2C52E!important;
+.arrow-mr{
+	margin-right: 10px;
 }
-.border-schedule{
-	padding-bottom: 5px;
-	border-bottom: 3px solid!important;
+.news{
+	background-color: #FFFFFF;
+	-webkit-box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.39);
+-moz-box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.39);
+box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.39);
 }
-.documentation {
-	height: 100px;
+.data-text{
+	color: #919291;
 }
-.map {
-	width: 100%!important;
+.button-more{
+	background-color: #0667CE;
+	color: #FFFCFC;
+	font-weight: bold;
+	font-size: 0.9em;
+	line-height: 1em;
+	border-radius: 0;
+	right: 15px;
+	float: right;
+	bottom:0;	
+}
+.news-top{
+	display: block;
+}
+.grafik-bg{
+	background-color: #1E2C3B;
+	opacity: 0.90;
+	left: 0;
+	height: 350px;
+	position: absolute;
+}
+.map{
+	margin-bottom: -8px;
+	
+}
+.navigate-link{
+	display: none;
+}
+.text-map{
+	margin-bottom: 3px;
+	color: #C7C7C7;
+}
+.copi-r{
+	display: block;
+	background-color: #1E2C3B;
 	margin-bottom: -8px;
 }
-.lin-h p {
-	margin-bottom: 5px!important;
-}
-a {
-	text-decoration: none!important;
-	color: #212529;
-}
-
-.img-100 {
-	width: 100%;
+.copi-r h5{
+	margin-bottom: -8px;
 }
