@@ -48,6 +48,9 @@ a {
 -moz-box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.39);
 box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.39);
 }
+.news-nav-text-color a{
+	color: #0143A5;
+}
 .data-text{
 	color: #919291;
 }
@@ -90,4 +93,8 @@ box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.39);
 }
 .copi-r h5{
 	margin-bottom: -8px;
+}
+.calendar{
+	height: 95%;
+	width: 100%;
 }
