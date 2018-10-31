@@ -32,17 +32,10 @@ a {
 .I-IIIst{
 	background-color: #E7E7E7;
 }
-.bg-coment{
-	height: 160px;
-	width: 10%;
-}
 .vidguk-blok{
 	display: block;
-	width: 89%;
 	float: left;
-	height: 160px;
 	border: 1.5px solid #0667ce!important;
-	border-left: none!important; 
 }
 .news-section{
 	display: inline-block;
