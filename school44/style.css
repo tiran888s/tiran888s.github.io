@@ -8,6 +8,10 @@ a {
 	width: 100%;
 	height: auto;
 }
+.width-80{
+	width: 80%;
+	height: auto;
+}
 .emblem{
 	height: 82px;
 }
@@ -62,6 +66,13 @@ box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.39);
 .data-text{
 	color: #919291;
 }
+.news-text p{
+	margin-bottom: 0px;
+}
+.news-text-one p{
+	margin-bottom: 3px;
+	text-align: justify;
+}
 .button-more, .form-submit{
 	background-color: #0667CE;
 	color: #FFFCFC;
@@ -70,6 +81,7 @@ box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.39);
 	line-height: 1em;
 	border-radius: 0;
 	right: 15px;
+	position: relative;
 	float: right;
 	bottom:0;
 	padding: 10px;
@@ -137,7 +149,14 @@ box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.39);
  -moz-transform: scale(1.1);
  -o-transform: scale(1.1);
  }
-
+aside{
+	background-color: #FFFFFF;
+}
+aside a{
+	display: block;
+	margin-bottom: 10px;
+	text-align: left;
+}
 /*.zatemnenie a { display: block; position: relative; }
 .zatemnenie a:before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: #195EA6;  opacity: 0; }
 .zatemnenie a:hover:before { opacity: 0.3; }
