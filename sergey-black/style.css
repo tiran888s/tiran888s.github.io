@@ -42,7 +42,6 @@ hr {
 /*Хедер*/
 header {
   width: 100%;
-  height: 100vh;
   background-blend-mode: multiply;
   background-color: rgba(2, 2, 2, 0.73);
   background-image: url(img/header-img.jpg);
@@ -465,6 +464,19 @@ nav a img {
 
   .collapse-nav ul li a {
     padding: 0 30px;
+  }
+}
+/* портретная ориентация */
+@media screen and (orientation: portrait) {
+  header {
+    height: 100vh;
+  }
+}
+/* горизонтальная ориентация */
+@media screen and (orientation: landscape) {
+  /* стили для горизонтальной */
+  header {
+    height: auto;
   }
 }
 
