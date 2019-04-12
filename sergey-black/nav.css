@@ -1,0 +1,11 @@
+
+#toggle {
+ 
+}
+
+
+#toggle:checked  ~ .nav-collapse {
+
+  
+  	display: none;
+  } 
