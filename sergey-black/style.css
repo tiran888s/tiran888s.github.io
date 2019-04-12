@@ -15,6 +15,10 @@ img {
   height: auto;
 }
 
+.web {
+  width: 250px !important;
+}
+
 a {
   text-decoration: none;
 }
