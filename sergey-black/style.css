@@ -15,6 +15,10 @@ img {
   height: auto;
 }
 
+header {
+  height: 100vh;
+}
+
 .web {
   width: 250px !important;
 }
@@ -467,13 +471,13 @@ nav a img {
   }
 }
 /* портретная ориентация */
-@media screen and (orientation: portrait) {
-  header {
-    height: 100vh;
+/*@media screen and (orientation:portrait) {
+  header{
+  	height: 100vh;
   }
-}
+}*/
 /* горизонтальная ориентация */
-@media screen and (orientation: landscape) {
+@media (max-width: 769px) and (orientation: landscape) {
   /* стили для горизонтальной */
   header {
     height: auto;
